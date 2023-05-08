@@ -1,0 +1,103 @@
+body,html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #f0f0f0;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    /* fixed=Paralax
+    scrol = normal
+    */
+}
+
+.pimg1 {
+    background-image: url(imagehome.png) ;
+    min-height: 100%; /*or 100vh*/
+}
+
+.pimg2 {
+    background-image: url(imagenailpolish.png) ;
+    min-height: 80%;
+}
+
+.pimg3 {
+    background-image: url(imageboth.png) ;
+    min-height:  80%;
+}
+.pimg4 {
+    background-image: url(imagecol.png) ;
+    min-height: 100%; /*or 100vh*/
+}
+
+.section {
+    text-align: center;
+    line-height: 600%;
+    padding: 30px 150px;
+}
+
+.section-light {
+    background-color: #f0f0f0;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.section-dark {
+    background-color: #f0f0f0;
+    color: #000000;
+    font-size: 20px;
+    line-height: 250%;
+    letter-spacing: 0.8px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.ptext {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    text-align: center;
+    line-height: 120%;
+    width: 60%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        color: #000000;
+}
+
+.ptext .border {
+    background-color: #111;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+}
+
+span.trans {
+    
+    color: #000000;
+    
+}
+
+@media (max-width:560px) {
+    .pimg1, .pimg2, .pimg3, .pimg4 {
+
+        background-attachment:scroll;
+
+    }
+}
